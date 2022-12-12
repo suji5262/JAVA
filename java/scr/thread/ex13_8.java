@@ -7,14 +7,24 @@ class ex13_8 {
         th1.start();
         th2.start();
 
-        try {
-//            th1.sleep(2000);  // 이렇게 쓰면 오해가능 - main 쓰레드가 잠이든다(코드를 실행하는건 메인)
-            Thread.sleep(2000); // 이렇게 써야 보다 편함
-        } catch (InterruptedException e) {}
+//        try {
+////            th1.sleep(2000);  // 이렇게 쓰면 오해가능 - main 쓰레드가 잠이든다(코드를 실행하는건 메인)
+//            Thread.sleep(2000); // 이렇게 써야 보다 편함
+//        } catch (InterruptedException e) {}
+//
+//        System.out.print("<< main 종료 >>");
+//    } // main
+//} // 쓰레드가 3개있음 (main, th1, th2)
+        delay(2 * 1000);
+        System.out.println("<< main 종료 >>");
+    }
 
-        System.out.print("<< main 종료 >>");
-    } // main
-} // 쓰레드가 3개있음 (main, th1, th2)
+    static void delay(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {}
+    }
+}
 
 class ThreadEx8_1 extends Thread {
     public void run() {
