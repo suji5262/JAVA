@@ -1,4 +1,4 @@
-﻿package thread;
+package thread;
 
 import javax.swing.*;
 
