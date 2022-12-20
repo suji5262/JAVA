@@ -18,6 +18,23 @@ public class PrintfEx1 {
         System.out.printf("%e%n", f2);
         System.out.printf("%g%n", f2);
 
+        System.out.printf("[%5d]%n", 10); // 5자리 중에 10만 출력(오른쪽정렬)
+        System.out.printf("[%-5d]%n", 10); // 왼쪽정렬
+        System.out.printf("[%05d]%n", 10); // 공백 대신 0으로 채움
+        System.out.printf("[%5d]%n", 1234567); // 5자리 이상 값을 채우면 5자리만 나오는게 아니라 다 출력됨
+
+        double d = 1.23456789;
+        System.out.printf("%f%n", d); // 7자리만 출력, 마지막 숫자는 반올림
+        System.out.printf("%14.10f%n", d); // 14자리가 출력 > 정수부분은 공백, 소수점 뒤자리는 0으로 채워짐
+        System.out.printf("%14.6f%n", d);
+        // 소수점 뒤 6자리숫자가 다 출력됨, 마지막은 반올림 - 보여지는것만 저장된 값은 변하지않음
+        System.out.printf("%.6f%n", d); //정수 부분은 다 출력, 소수점만 6자리 출력됨
+
+        System.out.printf("[%s]%n", "www.codechobo.com");
+        System.out.printf("[%20s]%n", "www.codechobo.com"); // 오른쪽 정렬, 나머지부분 공백
+        System.out.printf("[%-20s]%n", "www.codechobo.com");
+        System.out.printf("[%.10s]%n", "www.codechobo.com"); // 앞에서부터 10자리를 잘라 출력됨, 문자열 일부만 출력가능
+
         byte b = 1;
         short s =2;
         char c = 'A';
