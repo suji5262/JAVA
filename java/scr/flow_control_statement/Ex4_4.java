@@ -25,7 +25,10 @@ public class Ex4_4 {
         System.out.println("당신의 학점은 " + grade + "입니다");
 
 
-/*        int score = 0; // 점수를 저장하기 위한 변수
+        
+        
+        
+       int score = 0; // 점수를 저장하기 위한 변수
         char grade = 'D'; // 학점을 저장하기 위한 변수, 공백으로 초기화
 
         System.out.println("<점수를 입력하세요.>");
