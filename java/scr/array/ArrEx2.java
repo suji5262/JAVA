@@ -1,6 +1,6 @@
 package array;
 
-public class ArrEX2 {
+public class ArrEx2 {
     public static void main(String[] args) {
 
         // index 범위가 0~n-1 -> 0~4
