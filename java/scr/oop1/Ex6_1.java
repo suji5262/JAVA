@@ -1,7 +1,6 @@
 package oop1;
 
 public class Ex6_1 {
-
     public static void main(String[] args) {
 
         Tv t; // 변수 t를 선언
@@ -11,8 +10,8 @@ public class Ex6_1 {
         System.out.println("현재 채널은 " + t.channel + " 입니다.");
 
     }
-
-     static class Tv {
+}
+      class Tv {
 
             //Tv의 속성(멤버변수)
             String color;
@@ -25,4 +24,4 @@ public class Ex6_1 {
             void channelDown() { -- channel; }
 
     }
-}
+

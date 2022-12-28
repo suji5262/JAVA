@@ -28,12 +28,12 @@ public class Ex6_5 {
 
     }
 
+}
 
-
-    static class Card {
+     class Card {
         String kind;
         int number;
         static int width = 100;
         static int height = 250;
     }
-}
+

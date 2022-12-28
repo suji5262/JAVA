@@ -24,8 +24,9 @@ public class Ex6_6 {
         System.out.println();
         mm.printGugudan(14); // 14단 출력 -> 2~9단이 아니라 출력 x
     }
+}
 
-    static class MyMath {
+    class MyMath {
         long add(long a, long b) {
             long result = a + b;
             return  result;
@@ -61,6 +62,7 @@ public class Ex6_6 {
                 System.out.printf("%d * %d = %d%n", dan, i, dan * i);
             }
             // reture; 생략
-        }
     }
+
 }
+
