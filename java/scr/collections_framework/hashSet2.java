@@ -1,4 +1,4 @@
-package collections_framework.HashSet;
+package collections_framework;
 
 import java.util.*;
 

@@ -19,7 +19,7 @@ class B1 implements I1 {
 
 class C1 implements I1 {
     public void method() {
-        System.out.println("C클래스의 메서드");
+        System.out.println("C 클래스의 메서드");
     }
 }
 
